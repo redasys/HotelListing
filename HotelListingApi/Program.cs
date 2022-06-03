@@ -41,6 +41,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapCountryEndpoints();
-
 app.Run();
