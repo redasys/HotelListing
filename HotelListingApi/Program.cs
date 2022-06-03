@@ -1,6 +1,7 @@
 using HotelListingApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using HotelListingApi.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,5 +40,7 @@ app.UseCors("AllowAll");
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapCountryEndpoints();
 
 app.Run();
